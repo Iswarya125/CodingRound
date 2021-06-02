@@ -1,5 +1,6 @@
 #include <vector>
 #include <string>
+#include <iostream>
 
 using namespace std;
 
@@ -37,9 +38,8 @@ public:
 
 int main()
 {
-wordSearch C1();
-
-vector<vector<char>> grid_vector{{"A","B","C","D"},{"S","D","E","A"},{"A","N","S","E"}};
-C1.checkExistence(grid_vector,"ASA");
+wordSearch C1;
+vector<vector<char>> grid_vector{{'A','B','C','D'},{'S','D','E','A'},{'A','N','S','E'}};
+cout<<C1.checkExistence(grid_vector,"ASA");
 return(0);
 }
